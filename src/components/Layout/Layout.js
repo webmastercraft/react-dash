@@ -9,7 +9,7 @@ import UIIcons from '../../pages/components/icons';
 import UINotifications from '../../pages/notifications';
 import TablesStatic from '../../pages/tables/static';
 import MapsGoogle from '../../pages/components/maps/google';
-import CoreTypography from '../../pages/typography';
+import Vulnerability from '../../pages/vulnerability';
 import Charts from '../../pages/components/charts/Charts';
 import Dashboard from '../../pages/dashboard';
 
@@ -84,7 +84,7 @@ class Layout extends React.Component {
                     <Route path="/app/components/charts" exact component={Charts} />
                     <Route path="/app/tables" exact component={TablesStatic} />
                     <Route path="/app/components/maps" exact component={MapsGoogle} />
-                    <Route path="/app/typography" exact component={CoreTypography} />
+                    <Route path="/app/vulnerability" exact component={Vulnerability} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

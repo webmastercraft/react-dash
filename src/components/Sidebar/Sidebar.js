@@ -107,7 +107,7 @@ class Sidebar extends React.Component {
                         header="Vulnerability"
                         isHeader
                         iconName={<TablesIcon className={s.menuIcon} />}
-                        link="/app/typography"
+                        link="/app/vulnerability"
                         index="tables"
                     />
                     <LinksGroup

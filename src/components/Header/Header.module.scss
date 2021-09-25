@@ -400,3 +400,8 @@
   background: #12142B;
   opacity: .8;
 }
+
+
+.header_path_name::first-letter {
+  text-transform: uppercase;
+}

@@ -138,6 +138,8 @@ class Header extends React.Component {
   }
 
   render() {
+    var piece = this.props.location.pathname.split('/');
+    const path = piece[piece.length-1];
     return (
       <Navbar className={`d-print-none `}>
         <div className={s.burger}>
@@ -148,7 +150,9 @@ class Header extends React.Component {
             >
               <BurgerIcon className={s.headerIcon} />
             </NavLink>
+            <h1 className="header_path_name">{path}</h1>
         </div>
+        
         <div className={`d-print-none ${s.root}`}>
           {/* <UncontrolledAlert
             className={`${s.alert} mr-3 d-lg-down-none animate__animated animate__bounceIn animate__delay-1s`}
