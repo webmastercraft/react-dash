@@ -11,27 +11,17 @@ import {
   InputGroupText,
   InputGroup,
   Input,
-  UncontrolledAlert,
   Dropdown,
   Collapse,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  Badge,
-  ButtonGroup,
-  Button,
   Form,
   FormGroup,
 } from "reactstrap";
 import Notifications from "../Notifications";
-import PowerIcon from "../Icons/HeaderIcons/PowerIcon";
-import BellIcon from "../Icons/HeaderIcons/BellIcon";
-import SettingsIcon from "../Icons/HeaderIcons/SettingsIcon";
-import MessageIcon from "../Icons/HeaderIcons/MessageIcon";
+
 import BurgerIcon from "../Icons/HeaderIcons/BurgerIcon";
 import SearchIcon from "../Icons/HeaderIcons/SearchIcon";
-import ArrowIcon from "../Icons/HeaderIcons/ArrowIcon";
-
 
 import { logoutUser } from "../../actions/user";
 import {
@@ -40,10 +30,6 @@ import {
   changeSidebarPosition,
   changeSidebarVisibility,
 } from "../../actions/navigation";
-
-import sender1 from "../../assets/people/a1.jpg";
-import sender2 from "../../assets/people/a5.jpg";
-import sender3 from "../../assets/people/a4.jpg";
 
 import avatar from "../../assets/people/a7.jpg";
 
@@ -189,7 +175,7 @@ class Header extends React.Component {
               />
             </InputGroup>
           </Collapse>
-          <Form className="d-md-down-none mr-3 ml-3" inline>
+          {/* <Form className="d-md-down-none mr-3 ml-3" inline>
             <FormGroup>
               <InputGroup className={`input-group-no-border ${s.searchForm}`}>
                 <InputGroupAddon addonType="prepend">
@@ -204,7 +190,7 @@ class Header extends React.Component {
                 />
               </InputGroup>
             </FormGroup>
-          </Form>
+          </Form> */}
 
           <Nav className="ml-md-0">
             <Dropdown
@@ -232,7 +218,7 @@ class Header extends React.Component {
                 <Notifications />
               </DropdownMenu>
             </Dropdown>
-            <NavItem className="d-lg-none">
+            {/* <NavItem className="d-lg-none">
               <NavLink
                 onClick={this.toggleSearchOpen}
                 className={s.navItem}
@@ -240,7 +226,7 @@ class Header extends React.Component {
               >
                 <SearchIcon addId='header-search' className={s.headerIcon} />
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             
             {/* <NavItem className={`${s.divider} d-none d-sm-block`} /> */}
             <Dropdown

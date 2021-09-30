@@ -3,6 +3,7 @@ import auth from './auth';
 import navigation from './navigation';
 import alerts from './alerts';
 import register from './register';
+import notification from './notifications';
 
 export default combineReducers({
   alerts,

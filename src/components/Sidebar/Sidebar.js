@@ -116,16 +116,25 @@ class Sidebar extends React.Component {
                         header="Products"
                         isHeader
                         iconName={<NotificationsIcon className={s.menuIcon}/>}
-                        link="/app/tables"
+                        link="/app/product"
                         index="ui"
                     />
+                    {/* <LinksGroup
+                        onActiveSidebarItemChange={activeItem => this.props.dispatch(changeActiveSidebarItem(activeItem))}
+                        activeItem={this.props.activeItem}
+                        header="notifications"
+                        isHeader
+                        iconName={<ComponentsIcon className={s.menuIcon}/>}
+                        link="/app/notifications"
+                        index="alarm"
+                    /> */}
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem => this.props.dispatch(changeActiveSidebarItem(activeItem))}
                         activeItem={this.props.activeItem}
                         header="Alarms"
                         isHeader
                         iconName={<ComponentsIcon className={s.menuIcon}/>}
-                        link="/app/notifications"
+                        link="/app/alarms"
                         index="alarm"
                     />
                     {/* <LinksGroup

@@ -10,8 +10,10 @@ import UINotifications from '../../pages/notifications';
 import TablesStatic from '../../pages/tables/static';
 import MapsGoogle from '../../pages/components/maps/google';
 import Vulnerability from '../../pages/vulnerability';
+import Product from '../../pages/product';
 import Charts from '../../pages/components/charts/Charts';
 import Dashboard from '../../pages/dashboard';
+import Alarm from '../../pages/alarm';
 
 import Header from '../Header';
 import Sidebar from '../Sidebar';
@@ -30,12 +32,12 @@ class Layout extends React.Component {
     sidebarStatic: false,
     sidebarOpened: false,
   };
+
   constructor(props) {
     super(props);
 
     this.handleSwipe = this.handleSwipe.bind(this);
   }
-
 
   handleSwipe(e) {
     if ('ontouchstart' in window) {
@@ -85,6 +87,8 @@ class Layout extends React.Component {
                     <Route path="/app/tables" exact component={TablesStatic} />
                     <Route path="/app/components/maps" exact component={MapsGoogle} />
                     <Route path="/app/vulnerability" exact component={Vulnerability} />
+                    <Route path="/app/product" exact component={Product} />
+                    <Route path="/app/alarms" exact component={Alarm} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

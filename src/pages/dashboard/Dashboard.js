@@ -63,7 +63,7 @@ class Dashboard extends React.Component {
           </small>
         </h1>
 
-        <Row>
+        {/* <Row>
           <Col lg={7}>
             <Widget className="bg-transparent">
               <Map />
@@ -181,7 +181,7 @@ class Dashboard extends React.Component {
               </div>
             </Widget>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row>
           <Col lg={6} xl={4} xs={12}>
